@@ -7,7 +7,7 @@ Script: get-sound-device.ps1
 
 powershell
 # Get the first available and properly functioning sound device
-$device = (Get-CimInstance win32_sounddevice | Where-Object { $_.Status -eq "OK" -and $_.ConfigManagerErrorCode -eq 0 })[0]
+`$device = (Get-CimInstance win32_sounddevice | Where-Object { $_.Status -eq "OK" -and $_.ConfigManagerErrorCode -eq 0 })[0`
 
 # Display the name of the sound device
 Write-Host $device.Name
