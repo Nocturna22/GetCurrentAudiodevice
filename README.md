@@ -27,7 +27,7 @@ Usage
     Run the script:
 
 powershell
-.\GetCurrentAudiodevice.ps1
+`.\GetCurrentAudiodevice.ps1`
 
 Requirements
 
